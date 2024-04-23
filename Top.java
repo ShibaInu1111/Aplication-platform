@@ -9,6 +9,11 @@ public class Top extends Select{
             return;
         }
         else if(next_index == (this.menu.length-2)) {
+            super.select(next_index);
+            return;
+        }
+        else if(next_index == (this.menu.length-3) || next_index == (this.menu.length-4)){
+            Register reg = new Register(next_index-this.menu.length+4);
             return;
         }
         Detail detail = new Detail(next_index,this.current_index);

@@ -1,5 +1,5 @@
 public class Select{
-    String[] menu = {"Top","分析ツール","観分判ツール","申請ツール","Menu","終了"};
+    String[] menu = {"Top","分析ツール","観分判ツール","申請ツール","ユーザ新規登録","サイト新規登録","Menu","終了"};
     public int select(int current_index) {
         this.showMenu(current_index);
         int index = new java.util.Scanner(System.in).nextInt();
